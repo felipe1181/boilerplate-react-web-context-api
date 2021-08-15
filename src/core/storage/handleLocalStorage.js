@@ -10,7 +10,7 @@ const handleLocalStorage = {
       throw new Error({ localStorage: 'Error save' })
     }
   },
-  getItemLocalStorage         (key) {
+  getItemLocalStorage (key) {
     try {
       if (key) {
         return JSON.stringify(window.localStorage.getItem(key))
