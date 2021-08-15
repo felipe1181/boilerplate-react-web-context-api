@@ -1,0 +1,5 @@
+{
+    "*.{js,jsx}": [
+        "yarn standard src/**.js --fix"
+    ]
+}
