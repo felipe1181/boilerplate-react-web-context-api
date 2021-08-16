@@ -6,7 +6,7 @@ const routes = [
     path: '/',
     exact: true,
     routeComponent: RouteIsAuth,
-    name: 'Home',
+    name: 'Example',
     component: PageExample
   }
 ]
