@@ -24,6 +24,14 @@ export default function RenderRoutes (
     [extraProps]
   )
 
+  /* fazer layout render
+
+  - importar array de layout renders registrados
+  - fazer map nos layouts
+  - dentro do map fazer um filter nas rotas correspondentes
+
+  */
+
   return useMemo(() => {
     if (validateArray(routes).length) {
       return (
