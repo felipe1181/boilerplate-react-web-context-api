@@ -1,10 +1,11 @@
 import React from 'react'
 import { logo } from 'assets'
 import { ExampleComponentText } from 'core/components'
-console.log('logo', logo)
+
 function PageExample () {
   return (
     <div>
+      <img src={logo} />
       <ExampleComponentText>Essa é uma página de exemplo</ExampleComponentText>
       <ExampleComponentText component='p'>
         Uma pagina de exemplo
