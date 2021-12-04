@@ -31,7 +31,6 @@ export default function RenderRoutes (
   - dentro do map fazer um filter nas rotas correspondentes
 
   */
-
   return useMemo(() => {
     if (validateArray(routes).length) {
       return (
@@ -44,6 +43,8 @@ export default function RenderRoutes (
                 path={route.path}
                 exact={route.exact}
                 strict={route.strict}
+                renderLayout={route?.renderLayout}
+                name={route?.name}
                 render={(props) =>
                   renderRoute({ route, componentProps: props })}
               />
